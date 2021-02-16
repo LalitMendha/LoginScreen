@@ -51,7 +51,6 @@ function LoginPage() {
         />
       </div>
       <p id="errorMsg">* Password doesn't match </p>
-      <br />
       <button id="btn-submit" onClick={handleSubmit} type="Submit">
         Submit
       </button>

@@ -5,6 +5,7 @@
 
 .container {
   margin: 0 auto;
+  width: 60%;
   padding: 2rem;
   border: 1px solid black;
   border-radius: 10px;
@@ -16,8 +17,7 @@
 }
 
 .flex_item {
-  align-items: flex-end;
-  width: 50%;
+  width: 100%;
 }
 
 #btn-Submit {
