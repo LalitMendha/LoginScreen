@@ -1,0 +1,31 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: lightseagreen;
+}
+
+.flex_container {
+  display: flex;
+}
+
+.flex_item {
+  align-items: flex-end;
+  width: 50%;
+}
+
+#btn-Submit {
+  padding: 0.4rem;
+  visibility: visible;
+}
+
+#errorMsg {
+  color: red;
+  visibility: hidden;
+}
