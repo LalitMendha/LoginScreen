@@ -25,7 +25,8 @@
   visibility: visible;
 }
 
-#errorMsg {
+#errorMsg,
+#alphaNumeric {
   color: red;
   visibility: hidden;
 }

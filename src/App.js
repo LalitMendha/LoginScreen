@@ -9,9 +9,23 @@ function LoginPage() {
     var pass = e.target.value;
     setPassword(pass);
   }
+
+  function checkAlphaNumeric() {
+    if (!password.match("/^[0-9a-z]+$/")) {
+      return false;
+    }
+  }
+
   function handleConfirmPassword(e) {
-    var confPass = e.target.value;
-    setConfirmPassword(confPass);
+    if (checkAlphaNumeric()) {
+      var confPass = e.target.value;
+      setConfirmPassword(confPass);
+      var msg = document.getElementById("alphaNumeric");
+      msg.style.visibility = "hidden";
+    } else {
+      var msg = document.getElementById("alphaNumeric");
+      msg.style.visibility = "visible";
+    }
   }
   function handleSubmit(e) {
     // var btn = document.getElementById("btn-submit");
@@ -41,6 +55,9 @@ function LoginPage() {
           className="flex_item"
         />
       </div>
+      <p id="alphaNumeric">
+        * Password should contain atleast one alpha numeric charater
+      </p>
       <br />
       <div className="flex_container">
         <label className="flex_item">Confirm Password: </label>
